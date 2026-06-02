@@ -3,25 +3,32 @@ import Button from "./Button";
 const links = ["home", "about", "structure", "timeline", "prizes", "team"];
 
 export default function Navbar() {
-  return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center px-8 h-[60px] bg-black/40 backdrop-blur border-b border-purple-500/10">
-      <div className="font-grotesk font-bold text-white">
-        OCT<span className="text-purple-400">WAVE</span> 3.0
-      </div>
+    return (
+        <nav className="navbar">
+            {/* Logo */}
+            <div className="navbar-logo">
+                <span className="logo-icon">◼</span>
+                <span className="logo-text">
+          OCT<span className="logo-accent">WAVE</span>{" "}
+                    <span className="logo-version">3.0</span>
+        </span>
+            </div>
 
-      <div className="hidden md:flex gap-2">
-        {links.map((l) => (
-          <a
-            key={l}
-            href={`#${l}`}
-            className="text-xs text-slate-400 px-3 py-1 rounded-md hover:bg-purple-500/10 hover:text-purple-300"
-          >
-            {l.toUpperCase()}
-          </a>
-        ))}
-      </div>
+            {/* Links */}
+            <div className="hidden md:flex gap-1 navbar-links">
+                {links.map((l, i) => (
+                    <a
+                        key={l}
+                        href={`#${l}`}
+                        className={`navbar-link ${i === 0 ? "navbar-link-active" : ""}`}
+                    >
+                        {l.charAt(0).toUpperCase() + l.slice(1)}
+                    </a>
+                ))}
+            </div>
 
-      <Button>Register</Button>
-    </nav>
-  );
+            {/* CTA */}
+            <Button>Register now →</Button>
+        </nav>
+    );
 }
