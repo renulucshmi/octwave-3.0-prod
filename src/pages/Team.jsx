@@ -1,13 +1,50 @@
-export default function Team() {
-  return (
-    <section id="team" className="py-24 px-6">
-      <h2 className="text-3xl font-bold text-white mb-6">Team</h2>
+import React from "react";
 
-      <div className="grid md:grid-cols-3 gap-4 text-slate-300">
-        <div className="p-4 border border-purple-500/10 rounded">Chairperson</div>
-        <div className="p-4 border border-purple-500/10 rounded">Co-Chairs</div>
-        <div className="p-4 border border-purple-500/10 rounded">Organizers</div>
-      </div>
-    </section>
-  );
+const leadership = [
+    { initials: "NN", name: "Nuwini Navindya", role: "Chairperson — IAS Chapter" },
+    { initials: "NS", name: "Nisal Sanjula", role: "Vice Chairman — IAS Chapter" },
+    { initials: "RP", name: "Renulucshmi Prakasan", role: "Secretary — IAS Chapter" },
+];
+
+const cochairs = [
+    { initials: "MG", name: "Manushi Gunasekara", role: "Co-chair — OctWave 3.0" },
+    { initials: "HJ", name: "Hirun Jayalath", role: "Co-chair — OctWave 3.0" },
+    { initials: "LT", name: "Lakmana Thabrew", role: "Co-chair — OctWave 3.0" },
+];
+
+function MemberCard({ initials, name, role }) {
+    return (
+        <div className="team-card">
+            <div className="team-avatar">
+                <span>{initials}</span>
+            </div>
+            <p className="team-name">{name}</p>
+            <p className="team-role">{role}</p>
+        </div>
+    );
+}
+
+export default function Team() {
+    return (
+        <section id="team" className="section">
+            <p className="section-label">OUR TEAM</p>
+            <h2 className="section-title">
+                The people <span className="gradient-text">behind OctWave</span>
+            </h2>
+            <p className="section-sub">
+                IEEE IAS Student Branch Chapter — University of Moratuwa.
+            </p>
+
+            <div className="team-grid">
+                {leadership.map((m) => (
+                    <MemberCard key={m.initials} {...m} />
+                ))}
+            </div>
+            <div className="team-grid">
+                {cochairs.map((m) => (
+                    <MemberCard key={m.initials} {...m} />
+                ))}
+            </div>
+        </section>
+    );
 }
