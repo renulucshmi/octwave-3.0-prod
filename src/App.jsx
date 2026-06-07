@@ -10,7 +10,6 @@ import Structure from "./pages/Structure";
 import Timeline from "./pages/Timeline";
 import Prizes from "./pages/Prizes";
 import Team from "./pages/Team";
-import CTA from "./pages/CTA";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -29,7 +28,6 @@ export default function App() {
         <Timeline />
         <Prizes />
         <Team />
-        <CTA />
       </main>
     </>
   );

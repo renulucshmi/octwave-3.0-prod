@@ -165,7 +165,8 @@ export default function Home() {
                 overflow: "hidden",
                 background: "rgba(139,92,246,0.18)",
                 position: "relative", zIndex: 5,
-                marginTop: 24,
+                marginTop: 28,
+                marginBottom: 18,
             }}>
                 {stats.map((s, i) => (
                     <div
