@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-import StarCanvas from "./components/StarCanvas";
 import Loader from "./components/Loader";
 
 import { useState } from "react";
@@ -18,7 +17,6 @@ export default function App() {
 
   return (
     <>
-      <StarCanvas />
       <Navbar />
 
       <main className="bg-[#02020e] text-white font-inter">

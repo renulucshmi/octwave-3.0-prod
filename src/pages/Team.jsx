@@ -1,11 +1,5 @@
 import React from "react";
 
-const leadership = [
-    { initials: "NN", name: "Nuwini Navindya", role: "Chairperson — IAS Chapter" },
-    { initials: "NS", name: "Nisal Sanjula", role: "Vice Chairman — IAS Chapter" },
-    { initials: "RP", name: "Renulucshmi Prakasan", role: "Secretary — IAS Chapter" },
-];
-
 const cochairs = [
     { initials: "MG", name: "Manushi Gunasekara", role: "Co-chair — OctWave 3.0" },
     { initials: "HJ", name: "Hirun Jayalath", role: "Co-chair — OctWave 3.0" },
@@ -35,11 +29,6 @@ export default function Team() {
                 IEEE IAS Student Branch Chapter — University of Moratuwa.
             </p>
 
-            <div className="team-grid">
-                {leadership.map((m) => (
-                    <MemberCard key={m.initials} {...m} />
-                ))}
-            </div>
             <div className="team-grid">
                 {cochairs.map((m) => (
                     <MemberCard key={m.initials} {...m} />
