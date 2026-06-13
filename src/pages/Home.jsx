@@ -49,7 +49,7 @@ export default function Home() {
             }}
         >
             
-            <VectorSphereBackground />
+            <TokenRibbonBackground />
             <Floater visible={visible} />
 
             {/* Pill badge */}
