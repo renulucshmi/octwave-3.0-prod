@@ -32,8 +32,7 @@ export default function Navbar() {
                 ))}
             </div>
 
-            {/* CTA */}
-            <Button>Register now →</Button>
+            <Button>Register now</Button>
         </nav>
     );
 }

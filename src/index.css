@@ -674,43 +674,8 @@ body {
     gap: 16px;
     margin-bottom: 16px;
 }
-.team-card {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid rgba(139,92,246,0.12);
-    border-radius: 16px;
-    padding: 40px 24px 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: border-color 0.3s, transform 0.2s;
-}
-.team-card:hover {
-    border-color: rgba(139,92,246,0.3);
-    transform: translateY(-3px);
-}
-.team-avatar {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: rgba(124,58,237,0.22);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--purple-light);
-    margin-bottom: 20px;
-}
-.team-name {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #e2e8f0;
-    margin-bottom: 6px;
-}
-.team-role { font-size: 0.75rem; color: #475569; }
 
-/* ── CTA ─────────────────────────────────────────── */
+── CTA ───────────────────────────────────────────
 .cta-section {
     text-align: center;
     display: flex;
@@ -783,21 +748,3 @@ body {
     transition: border-color 0.2s, color 0.2s;
 }
 .social-icon:hover { border-color: var(--purple-light); color: #fff; }
-
-/* ── Footer ──────────────────────────────────────── */
-.footer {
-    width: 100%;
-    max-width: 1100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    font-size: 0.75rem;
-    color: #334155;
-}
-.footer-tag {
-    font-family: monospace;
-    color: #1e293b;
-    font-size: 0.72rem;
-}

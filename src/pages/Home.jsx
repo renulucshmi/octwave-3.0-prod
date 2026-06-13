@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Button from "../components/Button";
 import Countdown from "../components/Countdown";
 import Floater from "../components/Floater";
+import TokenRibbonBackground from "../components/TokenRibbonBackground"
 
 const stats = [
     { value: "04", label: "WORKSHOPS" },
@@ -47,6 +48,8 @@ export default function Home() {
                 overflow: "hidden",
             }}
         >
+            
+            <VectorSphereBackground />
             <Floater visible={visible} />
 
             {/* Pill badge */}
@@ -118,28 +121,27 @@ export default function Home() {
                     transitionDelay: "420ms",
                     fontFamily: "'Space Grotesk', sans-serif",
                     fontWeight: 700,
-                    fontSize: "clamp(2.4rem, 4.8vw, 4.2rem)",
-                    letterSpacing: "-0.03em",
+                    fontSize: "clamp(2.5rem, 3vw, 7rem)",                    letterSpacing: "-0.03em",
                     background: "linear-gradient(90deg, #a78bfa 0%, #f472b6 55%, #60a5fa 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
                 }}>
-                    Intelligence.
+                    Intelligence
                 </div>
             </div>
 
             {/* Subtitle */}
             <p style={{
                 ...item(580),
-                color: "#94a3b8",
+                color: "#f3eef2",
                 maxWidth: 500,
-                fontSize: "0.88rem",
+                fontSize: "1rem",
                 lineHeight: 1.75,
                 position: "relative", zIndex: 5,
                 margin: "14px 0 0",
             }}>
-                Sri Lanka's premier undergraduate AI &amp; Machine Learning competition.
+                Sri Lanka's premier undergraduate AI &amp;   Machine Learning competition.
                 Build real solutions. Learn from industry experts.
                 Compete on the biggest stage.
             </p>
