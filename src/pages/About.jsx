@@ -32,7 +32,7 @@ export default function About() {
                 <br />of AI engineers
             </h2>
             <p className="section-sub">
-                An AI/ML competition platform connecting universities to industry — through
+                An AI/ML competition platform connecting universities to industry - through
                 structured workshops, a Kaggle challenge, and a live final with real industry datasets.
             </p>
 

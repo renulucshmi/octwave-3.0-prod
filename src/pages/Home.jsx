@@ -36,6 +36,7 @@ export default function Home() {
     return (
         <section
             id="home"
+            className="max-md:py-16 max-md:px-4"
             style={{
                 position: "relative",
                 minHeight: "100vh",
@@ -114,14 +115,15 @@ export default function Home() {
                     Meets
                 </div>
 
-                {/* "Intelligence." — pink→cyan gradient (kept from Image 02) */}
+                {/* "Intelligence." — pink→cyan gradient */}
                 <div style={{
                     ...base,
                     ...(visible ? shown : hidden),
                     transitionDelay: "420ms",
                     fontFamily: "'Space Grotesk', sans-serif",
                     fontWeight: 700,
-                    fontSize: "clamp(2.5rem, 3vw, 7rem)",                    letterSpacing: "-0.03em",
+                    fontSize: "clamp(2.5rem, 6vw, 7rem)", // Fixed minimum bound tracking from clamp(2.5rem, 3vw, 7rem)
+                    letterSpacing: "-0.03em",
                     background: "linear-gradient(90deg, #a78bfa 0%, #f472b6 55%, #60a5fa 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
@@ -132,47 +134,57 @@ export default function Home() {
             </div>
 
             {/* Subtitle */}
-            <p style={{
-                ...item(580),
-                color: "#f3eef2",
-                maxWidth: 500,
-                fontSize: "1rem",
-                lineHeight: 1.75,
-                position: "relative", zIndex: 5,
-                margin: "14px 0 0",
-            }}>
-                Sri Lanka's premier undergraduate AI &amp;   Machine Learning competition.
+            <p 
+                className="max-md:text-sm max-md:px-2"
+                style={{
+                    ...item(580),
+                    color: "#f3eef2",
+                    maxWidth: 500,
+                    fontSize: "1rem",
+                    lineHeight: 1.75,
+                    position: "relative", zIndex: 5,
+                    margin: "14px 0 0",
+                }}
+            >
+                Sri Lanka's premier undergraduate AI &amp; Machine Learning competition.
                 Build real solutions. Learn from industry experts.
                 Compete on the biggest stage.
             </p>
 
             {/* Buttons */}
-            <div style={{
-                ...item(720),
-                display: "flex", gap: 10,
-                position: "relative", zIndex: 5,
-                marginTop: 20,
-            }}>
-                <Button>Register your team</Button>
-                <Button variant="outline">Explore the event</Button>
+            <div 
+                className="max-md:flex-col max-md:w-full max-md:px-6 max-md:gap-3"
+                style={{
+                    ...item(720),
+                    display: "flex", gap: 10,
+                    position: "relative", zIndex: 5,
+                    marginTop: 20,
+                }}
+            >
+                <Button className="max-md:w-full">Register your team</Button>
+                <Button variant="outline" className="max-md:w-full">Explore the event</Button>
             </div>
 
-            {/* Stats row */}
-            <div style={{
-                ...item(860),
-                display: "flex",
-                gap: 1,
-                border: "1px solid rgba(139,92,246,0.2)",
-                borderRadius: 12,
-                overflow: "hidden",
-                background: "rgba(139,92,246,0.18)",
-                position: "relative", zIndex: 5,
-                marginTop: 28,
-                marginBottom: 18,
-            }}>
+            {/* Stats row: Converts into a neat 2x2 wrapping grid layout on small screen viewports */}
+            <div 
+                className="max-md:grid max-md:grid-cols-2 max-md:w-full max-md:max-w-xs max-md:gap-px max-md:bg-purple-500/20"
+                style={{
+                    ...item(860),
+                    display: "flex",
+                    gap: 1,
+                    border: "1px solid rgba(139,92,246,0.2)",
+                    borderRadius: 12,
+                    overflow: "hidden",
+                    background: "rgba(139,92,246,0.18)",
+                    position: "relative", zIndex: 5,
+                    marginTop: 28,
+                    marginBottom: 18,
+                }}
+            >
                 {stats.map((s, i) => (
                     <div
                         key={s.label}
+                        className="max-md:w-full max-md:min-w-0 max-md:py-4"
                         style={{
                             ...base,
                             ...(visible ? shown : hidden),
@@ -196,19 +208,22 @@ export default function Home() {
                         }}>{s.value}</span>
                         <span style={{
                             fontSize: "0.48rem", letterSpacing: "0.12em",
-                            color: "#475569", fontWeight: 600, marginTop: 2,
+                            color: "#64748b", fontWeight: 600, marginTop: 2, // Matched #64748b with your CSS sheet variables
                         }}>{s.label}</span>
                     </div>
                 ))}
             </div>
 
-            {/* Countdown */}
-            <div style={{
-                ...item(1080),
-                width: "100%", maxWidth: 560,
-                position: "relative", zIndex: 5,
-                marginTop: 10,
-            }}>
+            {/* Countdown Container wrapper scaling overrides */}
+            <div 
+                className="max-md:px-2 max-md:scale-95"
+                style={{
+                    ...item(1080),
+                    width: "100%", maxWidth: 560,
+                    position: "relative", zIndex: 5,
+                    marginTop: 10,
+                }}
+            >
                 <Countdown />
             </div>
         </section>

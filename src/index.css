@@ -356,8 +356,9 @@ body {
     margin-bottom: 4px;
 }
 .about-card-desc {
-    font-size: 0.78rem;
-    color: #64748b;
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #d6dce3;
     line-height: 1.6;
 }
 
@@ -397,8 +398,8 @@ body {
 }
 
 .section-sub {
-    font-size: 0.9rem;
-    color: #64748b;
+    font-size: 1.2rem;
+    color: #e0e5eb;
     line-height: 1.75;
     max-width: 520px;
     margin-bottom: 48px;
