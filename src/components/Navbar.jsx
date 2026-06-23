@@ -1,7 +1,7 @@
 import Button from "./Button";
 import Logo from "../assets/logo.jpeg"
 
-const links = ["home", "about", "structure", "timeline", "prizes", "team"];
+const links = ["home", "about", "structure", "timeline", "prizes", "rules", "team"];
 
 export default function Navbar() {
     return (
@@ -32,7 +32,7 @@ export default function Navbar() {
                 ))}
             </div>
 
-            <Button>Register now</Button>
+            <Button href="https://docs.google.com/forms/d/1ZPlthFi4BBmi5SfvBX8zi4gPnmiqraxHCg_edHcZgXE/edit?usp=sharing_eip_se_dm&ts=6a38efb4">Register now</Button>
         </nav>
     );
 }

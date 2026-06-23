@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import Button from "../components/Button";
 import Countdown from "../components/Countdown";
-import Floater from "../components/Floater";
 import TokenRibbonBackground from "../components/TokenRibbonBackground"
 
 const stats = [
@@ -51,7 +50,6 @@ export default function Home() {
         >
             
             <TokenRibbonBackground />
-            <Floater visible={visible} />
 
             {/* Pill badge */}
             <div style={{
@@ -161,7 +159,7 @@ export default function Home() {
                     marginTop: 20,
                 }}
             >
-                <Button className="max-md:w-full">Register your team</Button>
+                <Button className="max-md:w-full" href="https://docs.google.com/forms/d/1ZPlthFi4BBmi5SfvBX8zi4gPnmiqraxHCg_edHcZgXE/edit?usp=sharing_eip_se_dm&ts=6a38efb4">Register your team</Button>
                 <Button variant="outline" className="max-md:w-full">Explore the event</Button>
             </div>
 

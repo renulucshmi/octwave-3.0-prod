@@ -8,12 +8,26 @@ import About from "./pages/About";
 import Structure from "./pages/Structure";
 import Timeline from "./pages/Timeline";
 import Prizes from "./pages/Prizes";
+import Rules from "./pages/Rules";
 import Team from "./pages/Team";
+import CTA from "./components/CTA";
 
 export default function App() {
-  const [loading, setLoading] = useState(true);
+  // Always show loader on a fresh page load; sessionStorage tracks if it already ran
+  const [loading, setLoading] = useState(() => {
+    if (typeof sessionStorage !== "undefined") {
+      return !sessionStorage.getItem("loaderDone");
+    }
+    return true;
+  });
 
-  if (loading) return <Loader onDone={() => setLoading(false)} />;
+  const handleDone = () => {
+    sessionStorage.setItem("loaderDone", "1");
+    setLoading(false);
+  };
+
+  if (loading) return <Loader onDone={handleDone} />;
+
 
   return (
     <>
@@ -25,7 +39,9 @@ export default function App() {
         <Structure />
         <Timeline />
         <Prizes />
+        <Rules />
         <Team />
+        <CTA />
       </main>
     </>
   );
