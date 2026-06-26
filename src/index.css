@@ -544,7 +544,7 @@ body {
     background: transparent;
     flex-shrink: 0;
 }
-.timeline-dot.active {
+.timeline-dot {
     background: var(--purple);
     border-color: var(--purple);
     box-shadow: 0 0 12px rgba(124,58,237,0.7);

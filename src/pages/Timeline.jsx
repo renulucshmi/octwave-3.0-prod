@@ -3,32 +3,32 @@ import React from "react";
 const weeks = [
     {
         wk: "WK 01",
-        title: "Introductory session + Workshop 1",
-        desc: "AI/ML industry trends · Intro to Machine Learning",
+        title: "REGISTER TEAM",
+        desc: "Register your team online",
         active: true,
     },
     {
         wk: "WK 02",
-        title: "Workshops 2 & 3",
-        desc: "ML models · Time-series data · Data engineering pipelines",
+        title: "ATTEND WORKSHOPS",
+        desc: "AI/ML industry trends · Intro to Machine Learning · ML models · Data engineering pipelines",
         active: false,
     },
     {
         wk: "WK 03",
-        title: "Workshop 4 + Team registration",
-        desc: "Kaggle platform intro · Register your team online",
-        active: false,
-    },
-    {
-        wk: "WK 04",
-        title: "Preliminary round — online",
+        title: "KAGGLE PRELIMINARY ROUND",
         desc: "Kaggle competition · Model + report submission · Top 10 shortlisted",
         active: false,
     },
     {
-        wk: "WK 05-06",
-        title: <span style={{ paddingLeft: "20px" }}>Final round — physical at UOM</span>,
-        desc: <span style={{ paddingLeft: "20px" }}>Real-world challenge · Live presentations · Awards ceremony</span>,
+        wk: "WK 04",
+        title: "TOP-10 FINAL CHALLENGE",
+        desc: "Real-world challenge · Live presentations · Physical at UOM",
+        active: false,
+    },
+    {
+        wk: "WK 05",
+        title: "AWARDS & RECOGNITION",
+        desc: "Winning teams · Certifications · Industry recognition · Career development & networks · Prizes",
         active: false,
     },
 ];

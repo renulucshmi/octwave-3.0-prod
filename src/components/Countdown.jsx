@@ -97,7 +97,7 @@ export default function Countdown() {
                 fontStyle: "italic",
                 whiteSpace: "nowrap",
             }}>
-                August<br />2026
+                August<br />15<sup>th</sup>
             </div>
         </div>
     );
