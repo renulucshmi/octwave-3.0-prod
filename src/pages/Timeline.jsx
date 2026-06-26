@@ -27,8 +27,12 @@ const weeks = [
     },
     {
         wk: "WK 05",
-        title: "AWARDS & RECOGNITION",
-        desc: "Winning teams · Certifications · Industry recognition · Career development & networks · Prizes",
+        title: <span style={{ paddingLeft: "20px" }}>AWARDS &amp; RECOGNITION</span>,
+        desc: (
+            <span style={{ paddingLeft: "20px" }}>
+                Winning teams · Certifications · Industry recognition · Career development &amp; networks
+            </span>
+        ),
         active: false,
     },
 ];

@@ -7,7 +7,6 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Structure from "./pages/Structure";
 import Timeline from "./pages/Timeline";
-import Prizes from "./pages/Prizes";
 import Rules from "./pages/Rules";
 import Team from "./pages/Team";
 import CTA from "./components/CTA";
@@ -38,7 +37,6 @@ export default function App() {
         <About />
         <Structure />
         <Timeline />
-        <Prizes />
         <Rules />
         <Team />
         <CTA />

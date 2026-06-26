@@ -1,7 +1,7 @@
 import Button from "./Button";
 import Logo from "../assets/logo.jpeg"
 
-const links = ["home", "about", "structure", "timeline", "prizes", "rules", "Our Team"];
+const links = ["home", "about", "structure", "timeline", "rules", "Our Team"];
 
 export default function Navbar() {
     return (
