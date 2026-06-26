@@ -2,7 +2,7 @@ import React from "react";
 
 const perks = [
     { left: "IEEE-endorsed certs for all finalists", right: "Direct industry partner networking" },
-    { left: "National recognition via IEEE IAS SL", right: "Career referrals for top performers" },
+    { left: "National recognition via IEEE IAS SL" },
 ];
 
 export default function Prizes() {
@@ -22,7 +22,7 @@ export default function Prizes() {
                     <span className="prize-badge">Champion</span>
                     <h3 className="prize-champion-title max-md:text-xl">1st Place Winner</h3>
                     <p className="prize-champion-desc">
-                        Best accuracy, latency &amp; presentation · + IEEE certificate + internship referrals
+                        Best accuracy, latency &amp; presentation · + IEEE certificate
                     </p>
                 </div>
                 <div className="prize-champion-right max-md:self-start">
@@ -54,7 +54,9 @@ export default function Prizes() {
                 {perks.map((row, i) => (
                     <React.Fragment key={i}>
                         <div className="prize-perk max-md:p-4 max-md:text-xs">{row.left}</div>
-                        <div className="prize-perk max-md:p-4 max-md:text-xs">{row.right}</div>
+                        {row.right && (
+                            <div className="prize-perk max-md:p-4 max-md:text-xs">{row.right}</div>
+                        )}
                     </React.Fragment>
                 ))}
             </div>
