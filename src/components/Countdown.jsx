@@ -51,7 +51,7 @@ export default function Countdown() {
                 style={{
                     fontSize: "0.6rem",
                     letterSpacing: "0.1em",
-                    color: "#475569",
+                    color: "#91a2b9",
                     fontWeight: 600,
                     lineHeight: 1.6,
                     whiteSpace: "nowrap",
@@ -91,7 +91,7 @@ export default function Countdown() {
             {/* "August 2026" */}
             <div style={{
                 fontSize: "0.68rem",
-                color: "#475569",
+                color: "#91a2b9",
                 textAlign: "center",
                 lineHeight: 1.5,
                 fontStyle: "italic",

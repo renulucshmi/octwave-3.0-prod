@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&eisplay=swap');
 
 @import "tailwindcss";
 /* ─── CSS Variables ─────────────────────────────────── */
@@ -181,7 +181,7 @@ body {
 .stat-label {
     font-size: 0.6rem;
     letter-spacing: 0.12em;
-    color: #64748b;
+    color: #91a2b9;
     font-weight: 500;
 }
 
@@ -199,7 +199,7 @@ body {
 .countdown-label {
     font-size: 0.6rem;
     letter-spacing: 0.1em;
-    color: #64748b;
+    color: #91a2b9;
     font-weight: 600;
     line-height: 1.6;
     white-space: nowrap;
@@ -636,7 +636,7 @@ body {
 .prize-runner-num {
     font-size: 2rem;
     font-weight: 800;
-    color: rgba(255,255,255,0.07);
+    color: var(--purple-light);
 }
 .prize-runner-title {
     font-size: 0.9rem;
@@ -644,7 +644,7 @@ body {
     color: #e2e8f0;
     margin-bottom: 4px;
 }
-.prize-runner-sub { font-size: 0.85rem; color: #64748b; }
+.prize-runner-sub { font-size: 0.85rem; color: #91a2b9; }
 .prize-perks {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -659,7 +659,7 @@ body {
     border-radius: 10px;
     padding: 16px 20px;
     font-size: 0.85rem;
-    color: #64748b;
+    color: #94a3b8;
 }
 .prize-perk::before {
     content: "·";
