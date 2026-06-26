@@ -129,7 +129,7 @@ body {
     transition: all 0.2s;
 }
 .navbar-link:hover  { background: rgba(139,92,246,0.12); color: var(--purple-light); }
-.navbar-link-active { background: rgba(255,255,255,0.08); color: #fff; }
+/*.navbar-link-active { background: rgba(255,255,255,0.08); color: #fff; } */
 
 /* ─── Hero ──────────────────────────────────────────── */
 .hero-title {

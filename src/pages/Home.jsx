@@ -156,9 +156,8 @@ export default function Home() {
                     marginTop: 20,
                 }}
             >
-                <Button className="max-md:w-full" href="https://docs.google.com/forms/d/1ZPlthFi4BBmi5SfvBX8zi4gPnmiqraxHCg_edHcZgXE/edit?usp=sharing_eip_se_dm&ts=6a38efb4">Register your team</Button>
-                <Button variant="outline" className="max-md:w-full">Explore the event</Button>
-            </div>
+                <Button className="max-md:w-full" href="https://forms.gle/T5cBRKdpBhU4tVcT9">Register your team</Button>
+                </div>
 
             {/* Stats row: Converts into a neat 2x2 wrapping grid layout on small screen viewports */}
             <div 

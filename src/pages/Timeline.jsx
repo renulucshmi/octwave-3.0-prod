@@ -27,8 +27,8 @@ const weeks = [
     },
     {
         wk: "WK 05-06",
-        title: "Final round — physical at UOM",
-        desc: "Real-world challenge · Live presentations · Awards ceremony",
+        title: <span style={{ paddingLeft: "20px" }}>Final round — physical at UOM</span>,
+        desc: <span style={{ paddingLeft: "20px" }}>Real-world challenge · Live presentations · Awards ceremony</span>,
         active: false,
     },
 ];

@@ -13,7 +13,6 @@ export default function CTA() {
             </p>
             <div className="cta-btns">
                 <Button href={registerUrl}>Register your team</Button>
-                <Button variant="outline" href="#about">Explore details</Button>
             </div>
             
             <div className="cta-socials">
