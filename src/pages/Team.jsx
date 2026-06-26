@@ -8,20 +8,23 @@ const cochairs = [
     photo: Member1,
     name: "Manushi Gunasekara",
     role: "Co-chair - OctWave 3.0",
+        phone: "+94 71 348 3880",
   },
   {
     photo: Member2,
     name: "Hirun Jayalath",
     role: "Co-chair - OctWave 3.0",
+        phone: "+94 76 915 5953",
   },
   {
     photo: Member3,
     name: "Lakmana Thabrew",
     role: "Co-chair - OctWave 3.0",
+        phone: "+94 71 327 8691",
   },
 ];
 
-function MemberCard({ photo, name, role, isLast }) {
+function MemberCard({ photo, name, role, phone, isLast }) {
   return (
     <div
         className={`
@@ -55,6 +58,13 @@ function MemberCard({ photo, name, role, isLast }) {
         <p className="text-sm text-slate-500 max-md:text-[10px]">
             {role}
         </p>
+
+        <a
+            href={`tel:${phone.replace(/\s+/g, "")}`}
+            className="mt-2 text-sm text-slate-300 hover:text-white transition-colors max-md:text-[10px]"
+        >
+            {phone}
+        </a>
     </div>
   );
 }
