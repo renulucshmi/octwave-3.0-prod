@@ -156,7 +156,7 @@ export default function Home() {
                     marginTop: 20,
                 }}
             >
-                <Button className="max-md:w-full" href="https://forms.gle/T5cBRKdpBhU4tVcT9">Register your team</Button>
+                <Button className="max-md:w-full" href="https://forms.gle/7JHGp6ZNhcqfrk76A">Register your team</Button>
                 </div>
 
             {/* Stats row: Converts into a neat 2x2 wrapping grid layout on small screen viewports */}

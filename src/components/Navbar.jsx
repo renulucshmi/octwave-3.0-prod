@@ -14,7 +14,7 @@ export default function Navbar() {
                     className="w-10 h-10 object-contain"
                 />
                 <span className="logo-text">
-                    OCT<span className="logo-accent">WAVE</span>{" "}
+                    Oct<span className="logo-accent">Wave</span>{" "}
                     <span className="logo-version">3.0</span>
                 </span>
             </div>
@@ -32,7 +32,7 @@ export default function Navbar() {
                 ))}
             </div>
 
-            <Button href="https://docs.google.com/forms/d/1ZPlthFi4BBmi5SfvBX8zi4gPnmiqraxHCg_edHcZgXE/edit?usp=sharing_eip_se_dm&ts=6a38efb4">Register now</Button>
+            <Button href="https://forms.gle/7JHGp6ZNhcqfrk76A">Register now</Button>
         </nav>
     );
 }

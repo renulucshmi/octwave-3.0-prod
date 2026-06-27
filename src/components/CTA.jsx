@@ -1,7 +1,7 @@
 import Button from "./Button";
 
 export default function CTA() {
-    const registerUrl = "https://docs.google.com/forms/d/1ZPlthFi4BBmi5SfvBX8zi4gPnmiqraxHCg_edHcZgXE/edit?usp=sharing_eip_se_dm&ts=6a38efb4";
+    const registerUrl = "https://forms.gle/7JHGp6ZNhcqfrk76A";
 
     return (
         <section className="cta-section">
