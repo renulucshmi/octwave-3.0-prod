@@ -32,7 +32,7 @@ export default function Navbar() {
                 ))}
             </div>
 
-            <Button href="https://forms.gle/7JHGp6ZNhcqfrk76A">Register now</Button>
+            <Button href="https://forms.gle/aMwNjXWppBRn9JDD8">Register now</Button>
         </nav>
     );
 }

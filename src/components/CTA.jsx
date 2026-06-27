@@ -1,7 +1,7 @@
 import Button from "./Button";
 
 export default function CTA() {
-    const registerUrl = "https://forms.gle/7JHGp6ZNhcqfrk76A";
+    const registerUrl = "https://forms.gle/aMwNjXWppBRn9JDD8";
 
     return (
         <section className="cta-section">
