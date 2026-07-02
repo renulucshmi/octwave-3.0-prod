@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const TARGET = new Date("2026-08-01T00:00:00");
+const TARGET = new Date("2026-07-12T23:59:59");
 
 function pad(n) {
     return String(Math.max(0, n)).padStart(2, "0");
@@ -97,7 +97,7 @@ export default function Countdown() {
                 fontStyle: "italic",
                 whiteSpace: "nowrap",
             }}>
-                August<br />15<sup>th</sup>
+                July<br />12<sup>th</sup>
             </div>
         </div>
     );
